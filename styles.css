@@ -8,71 +8,104 @@
 
 body{
     color: #ededed;
+    background-color: #0e2140;
+    
 }
 
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    background: white;  
+    padding: 10px 40px;
+    border-radius: 10px;
+    max-width: 1550px;
+    height: 80px;
+    margin: 30px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 100;
+
 }
 
 .logo{
     position: relative;
-    font-size: 25px;
-    color: #fff;
+    font-size: 30px;
+    color: #0e2140;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .navbar a{
     display: inline-block;
-    font-size: 25px;
-    color: #fff;
+    font-size: 22px;
+    color: #0e2140;
     text-decoration: none;
-    font-weight: 540;
-    margin-left: 35px;
+    font-weight: 550;
+    margin-left: 10px;
     transition: .3s;
+    letter-spacing: .5px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    position: relative;
 
 }
-.navbar a:hover{
-    color: #0ef;
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 10px;             
+    bottom: 8px;            
+    width: 0%;
+    height: 2px;
+    background-color: #0ef;
+    border-radius: 2px;
+    transition: width 0.3s ease;
 }
+.navbar a:hover,
+.navbar a:focus,
+.navbar a.active {
+    color: #0ef;
+    background-color: #0e2140;
+}
+
+.navbar a:hover::after,
+.navbar a:focus::after,
+.navbar a.active::after {
+    width: calc(100% - 20px); /* full width minus left+right padding */
+}
+
 .home{
     position: relative;
     width: 100%;
     justify-content: space-between;
-    height: 100vh;
+    height: 90vh;
     background: url(dp.png) no-repeat;
     background-size: contain;
     background-position: right;
     display: flex;
     align-items: center;
     background-color: #0e2140;
-    padding: 70px 10%;
+    padding: 0px 10%;
 }
 .home-content{
-    max-width: 600px;
+    max-width: 1000px;
 }
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
+     line-height: 1.5; 
 
 }
 .home-content h1{
     font-size: 56px;
-    font-weight: 700;    
+    font-weight: 700; 
+     line-height: 1.5;    
 }
 .home-content p{
     font-size: 20px;
     font-weight: 100;
-
+    line-height: 1.5; 
+    text-align: justify;
     
 }
 .home-sci a{
