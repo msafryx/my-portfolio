@@ -340,7 +340,54 @@ body{
 }
 
 
+h1 {
+      text-align: center;
+      color: #b983ff;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
 
+    .container1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: #1a1a2e;
+      padding: 20px 25px;
+      border-radius: 16px;
+      width: 260px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 6px;
+      color: #fff;
+    }
+
+    .tech-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .tech {
+      text-align: center;
+      width: 70px;
+      font-size: 12px;
+      color: #eee;
+    }
+
+    .tech img {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 5px;
+    }
 
 
 
