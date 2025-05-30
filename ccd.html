@@ -14,84 +14,129 @@
       margin: 0;
     }
 
-    .tech-card {
-      background-color: #1a1a2e;
-      padding: 30px;
-      border-radius: 16px;
-      width: 95%;
-      max-width: 1100px;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-      color: #fff;
-    }
+.tech-head {
+  text-align: center;
+  color: #0ef;
+  font-size: 56px;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
 
-    .tech-card h2 {
-      color: #bb86fc;
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 28px;
-    }
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
 
-    .tech-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+.card {
+  background-color: #0e2140;
+  padding: 20px 25px;
+  border-radius: 16px;
+  width: 400px;
+  box-shadow: 0 0 100px rgb(58, 174, 247);
+}
 
-    .tech-item {
-      background-color: #16213e;
-      border-radius: 12px;
-      padding: 12px 16px;
-      width: 110px;
-      text-align: center;
-      transition: transform 0.2s;
-    }
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(58, 174, 247);
+  padding-bottom: 18px;
+  color: #fff;
+  text-align: center;
+}
 
-    .tech-item:hover {
-      transform: scale(1.05);
-      background-color: #28334a;
-    }
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-    .tech-item img {
-      width: 30px;
-      height: 30px;
-      margin-bottom: 8px;
-    }
+.tech {
+  text-align: center;
+  width: 70px;
+  font-size: 16px;
+  color: #eee;
+}
 
-    .tech-item span {
-      font-size: 13px;
-      color: #eee;
-    }
+.tech img {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
   </style>
 </head>
 <body>
-  <div class="tech-card">
-    <h2>🛠️ Tech Stack</h2>
-    <div class="tech-grid">
-      <!-- Add logos via CDN -->
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/><span>HTML</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/><span>CSS</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/><span>JavaScript</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/><span>TypeScript</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/><span>React</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"/><span>jQuery</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"/><span>Bootstrap</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"/><span>Tailwind</span></div>
-      <div class="tech-item"><img src="https://vitejs.dev/logo.svg" /><span>Vite.js</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"/><span>Spring Boot</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain.svg"/><span>.NET</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"/><span>Flask</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/><span>Node.js</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"/><span>Express.js</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"/><span>MongoDB</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/><span>MySQL</span></div>
-      <div class="tech-item"><img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png"/><span>Supabase</span></div>
-      <div class="tech-item"><img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg"/><span>Firebase</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"/><span>SQLite</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"/><span>Docker</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"/><span>Figma</span></div>
-      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"/><span>Swift</span></div>
+     <section>
+        <h1 class="tech-head">🛠️ Tech Stack</h1>
+
+  <div class="container1">
+    <!-- Frontend Card -->
+    <div class="card">
+      <h3>Frontend</h3>
+      <div class="tech-grid">
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"><div>HTML</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"><div>CSS</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"><div>JavaScript</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"><div>TypeScript</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"><div>React</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"><div>Angular</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"><div>jQuery</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"><div>Bootstrap</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" /><div>Tailwind</div></div>
+        <div class="tech"><img src="https://vitejs.dev/logo.svg"><div>Vite.js</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"><div>Figma</div></div>
+      </div>
+    </div>
+
+    <!-- Backend Card -->
+    <div class="card">
+      <h3>Backend</h3>
+      <div class="tech-grid">
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"><div>Java</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><div>Python</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"><div>Spring</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain.svg"><div>.NET</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"><div>Flask</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"><div>Node.js</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"><div>Express.js</div></div>
+      </div>
+    </div>
+
+    <!-- Database Card -->
+    <div class="card">
+      <h3>Database</h3>
+      <div class="tech-grid">
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"><div>MongoDB</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"><div>MySQL</div></div>
+        <div class="tech"><img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png"><div>Supabase</div></div>
+        <div class="tech"><img src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg"><div>Firebase</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"><div>SQLite</div></div>
+      </div>
+    </div>
+
+    <!-- Mobile Card -->
+    <div class="card">
+      <h3>Mobile</h3>
+      <div class="tech-grid">
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"><div>Flutter</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"><div>React Native</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"><div>Swift</div></div>
+      </div>
+    </div>
+
+    <!-- Cloud/DevOps Card -->
+    <div class="card">
+      <h3>Cloud & DevOps</h3>
+      <div class="tech-grid">
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"><div>Docker</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"><div>AWS</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"><div>GCP</div></div>
+        <div class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"><div>Azure</div></div>
+      </div>
     </div>
   </div>
+</section>
 </body>
 </html>

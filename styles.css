@@ -339,61 +339,95 @@ body{
 
 }
 
+/*  */
 
-h1 {
-      text-align: center;
-      color: #b983ff;
-      font-size: 32px;
-      margin-bottom: 40px;
+.marquee-container {
+    margin-top: 20px;
+    margin-bottom: 80px;
+      overflow: hidden;
+      white-space: nowrap;
+      background: linear-gradient(90deg, #0ef, #5576f9);
+      padding: 10px 0;
+     transform: rotate(-1deg); 
     }
 
-    .container1 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+    .marquee-content {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 50s linear infinite;
+      font-size: 14px;
+      color: #000;
+      font-weight: bold;
+      
     }
 
-    .card {
-      background-color: #1a1a2e;
-      padding: 20px 25px;
-      border-radius: 16px;
-      width: 260px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    .marquee-content span {
+      margin: 0 20px;
+      display: inline-flex;
+      align-items: center;
+      
     }
 
-    .card h3 {
-      font-size: 18px;
-      margin-bottom: 15px;
-      border-bottom: 1px solid #444;
-      padding-bottom: 6px;
-      color: #fff;
+    .marquee-content span::before {
+      content: "★";
+      margin-right: 8px;
+      color: #000;
+      
     }
 
-    .tech-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
+  
+/*  */
+.tech-head {
+  text-align: center;
+  color: #0ef;
+  font-size: 56px;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
 
-    .tech {
-      text-align: center;
-      width: 70px;
-      font-size: 12px;
-      color: #eee;
-    }
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
 
-    .tech img {
-      width: 30px;
-      height: 30px;
-      margin-bottom: 5px;
-    }
+.card {
+  background-color: #0e2140;
+  padding: 20px 25px;
+  border-radius: 16px;
+  width: 400px;
+  box-shadow: 0 0 100px rgb(58, 174, 247);
+}
 
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(58, 174, 247);
+  padding-bottom: 18px;
+  color: #fff;
+  text-align: center;
+}
 
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
+.tech {
+  text-align: center;
+  width: 70px;
+  font-size: 16px;
+  color: #eee;
+}
 
-
-
+.tech img {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
 
 
 
@@ -459,3 +493,7 @@ h1 {
     }
     
 }
+  @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
